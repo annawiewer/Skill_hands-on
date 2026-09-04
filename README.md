@@ -187,8 +187,16 @@ Awesome Copilot has an `incident-postmortem` skill for learning after an inciden
 
 ## 🧪 Repository check
 
-After changing workshop content, run this command from the repository root:
+After changing workshop content, run the command for your operating system from the repository root.
+
+Windows:
 
 ```powershell
 pwsh -NoProfile -File ./scripts/Test-Workshop.ps1
+```
+
+macOS or Linux:
+
+```bash
+bash ./scripts/Test-Workshop.sh
 ```

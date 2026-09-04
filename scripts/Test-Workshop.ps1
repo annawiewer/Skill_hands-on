@@ -7,6 +7,7 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $requiredFiles = @(
     'README.md',
+    'scripts/Test-Workshop.sh',
     'labs/00-setup.md',
     'labs/01-discover-before-create.md',
     'labs/02-perform-workflow.md',
