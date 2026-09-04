@@ -10,7 +10,9 @@ Develop and verify a useful incident-handoff workflow in Copilot Chat before pac
 
 ## Step 1: Inspect the input
 
-Open `scenarios/incident-notes.md`, then send:
+1. In the VS Code Explorer, open `scenarios/incident-notes.md`.
+2. Keep Copilot Chat in Agent mode so it can read workspace files.
+3. Send the following prompt in Copilot Chat. Do not paste the file contents into Chat.
 
 ```text
 Read scenarios/incident-notes.md. Before drafting a handoff, list the facts that are confirmed, the statements that are only hypotheses, and the important information that is missing. Do not infer missing values.
@@ -64,3 +66,7 @@ Continue only when the chat contains:
 - at least one explicit decision rule;
 - a list of missing information that was not invented; and
 - a summarized reusable workflow.
+
+## Next
+
+Continue to [Lab 03: Create the Skill](03-create-skill.md).

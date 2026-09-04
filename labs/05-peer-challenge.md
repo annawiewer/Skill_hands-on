@@ -10,6 +10,8 @@ Work in pairs. The author leaves the generated skill in the workspace and closes
 
 The author must not explain how to invoke the skill or what the output should contain.
 
+If you are working alone, act as the reviewer in a fresh chat and record the result as a provisional self-check. A later test by another person is still required for full peer validation.
+
 ## Step 2: Run the challenge
 
 The reviewer starts a fresh chat and sends:
@@ -58,3 +60,7 @@ Discuss these questions:
 2. Which frontmatter words made automatic discovery more reliable?
 3. What did the fresh-chat test reveal?
 4. When would instructions, a prompt file, or a custom agent be a better choice than a skill?
+
+## Finish
+
+Return to the [workshop README](../README.md) and confirm every item under **You are finished when**.

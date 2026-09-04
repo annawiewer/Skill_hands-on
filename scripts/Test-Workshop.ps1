@@ -7,7 +7,6 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $requiredFiles = @(
     'README.md',
-    'facilitator-guide.md',
     'labs/00-setup.md',
     'labs/01-discover-before-create.md',
     'labs/02-perform-workflow.md',
@@ -61,6 +60,22 @@ if (Test-Path -LiteralPath $readmePath -PathType Leaf) {
     }
     if ($readme -notmatch '\| \*\*Duration\*\* \| 30-120 minutes') {
         $failures.Add('README must advertise a variable duration from 30 to 120 minutes.')
+    }
+}
+
+$cloneCommand = 'git clone https://github.com/annawiewer/Skill_hands-on.git'
+$cloneGuides = @('README.md', 'labs/00-setup.md')
+
+foreach ($relativePath in $cloneGuides) {
+    $content = Get-Content -Raw -LiteralPath (Join-Path $root $relativePath)
+    if (-not $content.Contains($cloneCommand)) {
+        $failures.Add("Missing workshop clone command: $relativePath")
+    }
+    if ($content -notmatch '(?i)do not clone (the )?Awesome Copilot') {
+        $failures.Add("Must distinguish the workshop clone from Awesome Copilot: $relativePath")
+    }
+    if ($content -notmatch '(?m)^\s*code \.\r?$') {
+        $failures.Add("Missing VS Code open command: $relativePath")
     }
 }
 

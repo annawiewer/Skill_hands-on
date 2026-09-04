@@ -56,3 +56,7 @@ Make one focused change, start a fresh chat, and rerun the failing test. Do not 
 ## Checkpoint
 
 Record a pass or fail for all four tests. Continue only when every test passes in a fresh chat.
+
+## Next
+
+Continue to [Lab 05: Peer Challenge](05-peer-challenge.md).

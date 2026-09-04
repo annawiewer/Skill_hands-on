@@ -6,7 +6,7 @@ Use `/create-skill` to convert the demonstrated chat workflow into a workspace-s
 
 ## Step 1: Invoke the creator
 
-In the same chat used for Lab 02, send:
+In the same Copilot Chat used for Lab 02, send the prompt below. Run `/create-skill` in Copilot Chat, not in a terminal.
 
 ```text
 /create-skill Create a reusable workspace skill named incident-handoff from the workflow we just completed. It should produce a concise active-incident shift handoff from supplied notes without inventing facts.
@@ -67,3 +67,7 @@ You are complete when:
 - the description contains clear trigger language;
 - the body contains the demonstrated procedure and completion checks; and
 - you have positive and negative behavior-test prompts.
+
+## Next
+
+Continue to [Lab 04: Test and Improve the Skill](04-test-and-improve.md).

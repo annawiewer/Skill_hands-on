@@ -25,6 +25,8 @@ The point is not that a public catalog is the only solution. An organization can
 
 ## Step 2: Search
 
+Complete this step in your web browser. The skills index belongs to the external Awesome Copilot repository, not to your local `Skill_hands-on` workspace.
+
 1. Open the [skills index](https://github.com/github/awesome-copilot/blob/main/docs/README.skills.md).
 2. Use `Ctrl+F` on Windows or `Cmd+F` on macOS.
 3. Search for `incident`.
@@ -97,3 +99,7 @@ The closest candidate is designed for a blameless retrospective after an inciden
 Do not continue until your chat contains a clear `create` decision and its rationale. This context will help `/create-skill` understand why the new workflow exists.
 
 Your rationale should show both sides: Awesome Copilot prevented a blind start by providing relevant prior art, and inspection showed why copying that prior art would not satisfy the active-handoff requirement.
+
+## Next
+
+Continue to [Lab 02: Perform the Workflow](02-perform-workflow.md).
